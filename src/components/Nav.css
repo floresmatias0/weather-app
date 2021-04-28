@@ -1,0 +1,109 @@
+#logoHenry {
+  margin-right: 20px;
+}
+.Barras{
+  background-color: transparent;
+}
+.navbar{
+  background-color : transparent;
+  display: flex;
+  align-self: center;
+  flex-direction: row;
+}
+.search{
+
+  border:3px solid black;
+  outline: none;
+  height: 2em;
+  background-color: rgba(250, 250, 250, 0.6);
+  border-radius: 1em;
+  box-shadow: 2px 2px 5px black;
+  text-align: center;
+  color: black;
+  font-family: 'Orelega One', cursive;
+  font-size: 1.1rem;
+}
+.button{
+  margin-left: 0.5em;
+  border-radius: 1em;
+  padding-top: 0.2em;
+  padding-bottom: 0.2em;
+  border:3px solid black;
+  background-color: gray;
+  color: aliceblue;
+  font-size: 1.1rem;
+  font-family: 'Orelega One', cursive;
+}
+.medio{
+  width: 33.3%;
+}
+.derecha{
+  width: 33.3%;
+  color: aliceblue;
+  text-shadow: 1px 1px 3px black;
+  font-size: 1.5rem;
+  font-family: 'Orelega One', cursive;
+  text-align: right;
+}
+.izquierda{
+  width: 33.3%;
+  text-align: left;
+  font-size: 2rem;
+}
+.izquierda img{
+  width: 60px;
+  height: 60px;
+}
+.responsive{
+  display: none;
+}
+@media screen and (max-width:950px){
+  .medio{
+    width: 53.3%;
+  }
+  .derecha{
+    width: 33.3%;
+
+  }
+  .izquierda{
+    width: 13.3%;
+  }
+}
+@media screen and (max-width:720px){
+  .navbar{
+    flex-direction: column;
+    line-height: 2em;
+  }
+  .medio{
+    width: 100%;
+  }
+  .derecha{
+    display: none;
+  }
+  .izquierda{
+    display: none;
+  }
+  .responsive{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-self: center;
+    width: 100%;
+    color: aliceblue;
+    text-shadow: 1px 1px 3px black;
+    font-size: 1.5rem;
+    font-family: 'Orelega One', cursive;
+  }
+  .responsive p{
+    width: 90%;
+    margin:0;
+    display: flex;
+    align-self: center;
+    justify-self: right;
+    margin-left:25%;
+  }
+  .responsive a{
+    width: 10%;
+    text-align: left;
+  }
+}
